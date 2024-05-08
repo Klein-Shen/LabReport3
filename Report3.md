@@ -143,34 +143,57 @@ I choose `grep`.
 `grep -r "keyword" ./technical`
 This command will recursively search for the string "keyword" in all files under the `./technical` directory.
 
+
+<img width="443" alt="8d83bc549c83781c65f8e03419fa782" src="https://github.com/Klein-Shen/LabReport3/assets/165833763/25fba5ea-b32b-4d50-b466-4c4d079db92e">
+
+
 `grep -r "happy" ./technical`
 This command will recursively search for the string "happy" in all files under the `./technical` directory.
 
 
+<img width="348" alt="1eacd7ea4745310b627be8ae5300767" src="https://github.com/Klein-Shen/LabReport3/assets/165833763/531f8769-651a-449c-8e15-7b99d35f41e5">
+
+
 > `-i` Case-insensitive search : This option tells `grep` to perform a case-insensitive search.
 
-`grep -i "Keyword" ./technical/file.txt`
-This command will search for the string "Keyword" in the file `file.txt` under the `./technical` directory, ignoring case.
+`grep -i "Keyword" ./technical/*.txt`
+This command will search for the string "Keyword" in the file `*.txt` under the `./technical` directory, ignoring case.
+
+
+<img width="435" alt="3c200f0cac1f1b43593c62a5eb6635a" src="https://github.com/Klein-Shen/LabReport3/assets/165833763/5faf073d-5191-45f9-839b-def841ab861a">
+
 
 `grep -i "LeeSin" ./technical/LOL.txt`
 This command will search for the string "LeeSin" in the file `LOL.txt` under the `./technical` directory, ignoring case.
 
 
+<img width="278" alt="9dd1f64172789abfc0270bef9fa052d" src="https://github.com/Klein-Shen/LabReport3/assets/165833763/14680eff-1dec-4151-a8f9-412bb3397b0c">
+
+
 > `-v` Invert match : This option tells `grep` to display lines that do not match the specified pattern.
 
-`grep -v "pattern" ./technical/file.txt`
-This command will display all lines in `file.txt` under the `./technical` directory that do not contain the specified pattern.
+`grep -v "pattern" ./technical/*.txt`
+This command will display all lines in `*.txt` under the `./technical` directory that do not contain the specified pattern.
 
-`grep -v "unlucky" ./technical/life.txt`
-This command will display all lines in `file.txt` under the `./technical` directory that do not contain the string "unlucky".
+
+<img width="439" alt="73225de2fa3c98f746f28d2484512f5" src="https://github.com/Klein-Shen/LabReport3/assets/165833763/b2159ed3-3ce0-4c2d-b6a5-19316350b86b">
+
+
+`grep -v "unlucky" ./technical/*.txt`
+This command will display all lines in `*.txt` under the `./technical` directory that do not contain the string "unlucky".
+
+
+<img width="426" alt="37723bbca87276fa7c3ec84bfa27af7" src="https://github.com/Klein-Shen/LabReport3/assets/165833763/d3fe197a-23b7-4fdc-8ca7-4ccbeb09d90e">
 
 
 > `-l` Display file names : This option tells `grep` to display only the names of files that contain the specified pattern, instead of the matching lines.
 
 `grep -l "pattern" ./technical/*.txt`
 This command will display the names of all `.txt` files under the `./technical` directory that contain the specified pattern.
+<img width="260" alt="dda794875d878a49463c551b853b80a" src="https://github.com/Klein-Shen/LabReport3/assets/165833763/7546d7cf-644a-4d73-9767-300ab1e94516">
 
 `grep -l "midterm" ./technical/*.txt`
 This command will display the names of all `.txt` files under the `./technical` directory that contain the string "midterm".
+<img width="266" alt="18d7c48c7dbc0d7eb81c618f09c4835" src="https://github.com/Klein-Shen/LabReport3/assets/165833763/b58cd60f-d5ac-4215-b81d-6852d58ef05e">
 
 I asked ChatGPT about the usage of some command-line options related to grep, which provides the definition of grep and the meaning of some command-line options, and provides an example for each one.
